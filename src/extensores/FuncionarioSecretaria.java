@@ -5,7 +5,7 @@
  */
 package extensores;
 
-import implementadores.TipoDocumentoHistorico;
+import implementadores.TipoDocumentoCertificado;
 import modelo.Funcionario;
 
 /**
@@ -15,7 +15,7 @@ import modelo.Funcionario;
 public class FuncionarioSecretaria extends Funcionario{
 
     public FuncionarioSecretaria(Funcionario superior) {
-        listaDocumentos.add(TipoDocumentoHistorico.getTipoDocumentoHistorico());
+        listaDocumentos.add(TipoDocumentoCertificado.getTipoDocumentoCertificado());
         setFuncionarioSuperior(superior);
     }
     public String getDescricaoCargo()
