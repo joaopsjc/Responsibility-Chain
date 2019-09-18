@@ -5,8 +5,6 @@
  */
 package modelo;
 
-import interfaces.TipoDocumento;
-
 /**
  *
  * @author ice

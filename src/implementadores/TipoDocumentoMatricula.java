@@ -5,7 +5,7 @@
  */
 package implementadores;
 
-import interfaces.TipoDocumento;
+import modelo.TipoDocumento;
 
 /**
  *
@@ -15,7 +15,7 @@ public class TipoDocumentoMatricula implements TipoDocumento {
     
     private static TipoDocumentoMatricula tipoDocumentoMatricula = new TipoDocumentoMatricula();
     
-    private static TipoDocumentoMatricula getTipoDocumentoMatricula()
+    public static TipoDocumentoMatricula getTipoDocumentoMatricula()
     {
         return tipoDocumentoMatricula;
     }

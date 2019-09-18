@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author ice
  */
 public abstract class Funcionario {
-    protected ArrayList ListaDocumentos = new ArrayList();
+    protected ArrayList listaDocumentos = new ArrayList();
     private Funcionario funcionarioSuperior;
 
     public Funcionario getFuncionarioSuperior() {
@@ -26,7 +26,7 @@ public abstract class Funcionario {
     
     public String assinarDocumento(Documento documento)
     {
-        if(ListaDocumentos.contains(documento.getTipoDocumento()))
+        if(listaDocumentos.contains(documento.getTipoDocumento()))
         {
             return getDescricaoCargo();
         }

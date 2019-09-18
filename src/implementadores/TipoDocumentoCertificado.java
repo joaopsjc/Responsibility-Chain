@@ -5,7 +5,7 @@
  */
 package implementadores;
 
-import interfaces.TipoDocumento;
+import modelo.TipoDocumento;
 
 /**
  *
@@ -15,7 +15,7 @@ public class TipoDocumentoCertificado implements TipoDocumento {
     
     private static TipoDocumentoCertificado tipoDocumentoCertificado = new TipoDocumentoCertificado();
     
-    private static TipoDocumentoCertificado getTipoDocumentoCertificado()
+    public static TipoDocumentoCertificado getTipoDocumentoCertificado()
     {
         return tipoDocumentoCertificado;
     }
