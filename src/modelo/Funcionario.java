@@ -23,4 +23,24 @@ public abstract class Funcionario {
         this.funcionarioSuperior = funcionarioSuperior;
     }
     public abstract String getDescricaoCargo();
+    
+    public String assinarDocumento(Documento documento)
+    {
+        if(ListaDocumentos.contains(documento.getTipoDocumento()))
+        {
+            return getDescricaoCargo();
+        }
+        else
+        {
+            if(funcionarioSuperior!=null)
+            {
+                return funcionarioSuperior.assinarDocumento(documento);
+            }
+            else
+            {
+                return "Sem assinatura";
+            }
+        
+        }
+    }
 }
